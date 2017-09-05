@@ -37,7 +37,7 @@ static NSString *kACTIVEUSERID = @"activeUserId";
 
     
     for(NSHTTPCookie *cookie in [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies]) {
-        if([[cookie domain] isEqualToString:@"githubtest://callback"]) {
+        if([[cookie domain] isEqualToString:@"github.com"]) {
             [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookie];
         }
     }
